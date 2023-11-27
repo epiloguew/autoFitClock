@@ -6,8 +6,9 @@ let count = ref("");
 let fixTime = ref("");
 let timer = ref(null);
 const appoint = "08:00:00";
-const origin = "14:00:00";
+let origin = "";
 onMounted(() => {
+  origin = window.appointTimer || "08:00:00";
   timer.value = setInterval(() => {
     count.value = fn();
   }, 1000);

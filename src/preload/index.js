@@ -1,6 +1,6 @@
 import { contextBridge } from "electron";
 import { electronAPI } from "@electron-toolkit/preload";
-import { appointTimer } from "../renderer/src/utils/timer.js";
+import { appointTimer } from "../../src/renderer/src/utils/timer.js";
 // Custom APIs for renderer
 const api = {};
 
@@ -11,7 +11,9 @@ if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld("electron", electronAPI);
     contextBridge.exposeInMainWorld("api", api);
-    contextBridge.exposeInMainWorld("appointTimer", appointTimer());
+    appointTimer((appoint) => {
+      contextBridge.exposeInMainWorld("appointTimer", appoint);
+    });
   } catch (error) {
     console.error(error);
   }
