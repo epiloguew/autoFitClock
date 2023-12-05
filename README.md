@@ -1,34 +1,19 @@
-# electron-clock
+### AutoFixClock
 
-An Electron application with Vue
+什么？你还在摆烂中懊悔忘记学习？
 
-## Recommended IDE Setup
+你还在妄图通过不睡觉来弥补白天浪费掉的时间吗？
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+你的作息是否越来越混乱了？
 
-## Project Setup
+下午四点起床，努力两个小时——该犒劳自己一顿饱饭了！晚上七点半了，已经很努力了，该上号了！
 
-### Install
+其实，你只用功了两个小时。
 
-```bash
-$ npm install
-```
+来试试 AutoFixCliock 吧！
 
-### Development
+将开始时间设置为 08:00am
 
-```bash
-$ npm run dev
-```
+再设置起床时间为 16:00pm
 
-### Build
-
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+当 19:00pm 时会将时间自动修正为 11:00am!
